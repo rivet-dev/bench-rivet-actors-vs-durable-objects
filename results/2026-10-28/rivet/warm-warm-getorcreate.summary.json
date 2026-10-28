@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "scenario": "warm",
+    "prefix": "warm-getorcreate",
+    "args": {
+      "n": "2000",
+      "actors": "10",
+      "method": "getOrCreate",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "warm-getorcreate"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:44:03.191Z",
+    "endedAt": "2026-10-28T13:44:05.007Z"
+  },
+  "metrics": {
+    "warm": {
+      "n": 2000,
+      "errors": 0,
+      "totalMs": {
+        "n": 2000,
+        "p50": 0.781,
+        "p90": 1.166,
+        "p99": 1.337,
+        "p999": 5.543,
+        "max": 8.138,
+        "mean": 0.831
+      },
+      "handlerMs": {
+        "n": 2000,
+        "p50": 0.002,
+        "p90": 0.004,
+        "p99": 0.006,
+        "p999": 0.015,
+        "max": 0.02,
+        "mean": 0.003
+      }
+    }
+  }
+}

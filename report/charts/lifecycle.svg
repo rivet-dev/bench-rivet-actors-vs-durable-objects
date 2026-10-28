@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="536" viewBox="0 0 760 536" font-family="system-ui, sans-serif" font-size="12">
+<rect width="760" height="536" fill="#ffffff"/>
+<text x="12" y="22" font-size="14" font-weight="600" fill="#1b1916">Create and wake, first request answered (ms, log scale)</text>
+<line x1="300.0" y1="36" x2="300.0" y2="516" stroke="#e6e3dc"/>
+<text x="300.0" y="530" text-anchor="middle" fill="#8a8478">0.1 ms</text>
+<line x1="388.0" y1="36" x2="388.0" y2="516" stroke="#e6e3dc"/>
+<text x="388.0" y="530" text-anchor="middle" fill="#8a8478">1 ms</text>
+<line x1="476.0" y1="36" x2="476.0" y2="516" stroke="#e6e3dc"/>
+<text x="476.0" y="530" text-anchor="middle" fill="#8a8478">10 ms</text>
+<line x1="564.0" y1="36" x2="564.0" y2="516" stroke="#e6e3dc"/>
+<text x="564.0" y="530" text-anchor="middle" fill="#8a8478">100 ms</text>
+<line x1="652.0" y1="36" x2="652.0" y2="516" stroke="#e6e3dc"/>
+<text x="652.0" y="530" text-anchor="middle" fill="#8a8478">1000 ms</text>
+<line x1="740.0" y1="36" x2="740.0" y2="516" stroke="#e6e3dc"/>
+<text x="740.0" y="530" text-anchor="middle" fill="#8a8478">10000 ms</text>
+<text x="292" y="57" text-anchor="end" fill="#1b1916">Actor create, first request answered (no sto (Rivet)</text>
+<rect x="300" y="44" width="148.8" height="18" fill="#b74b23" rx="3"/>
+<line x1="448.8" y1="53" x2="465.5" y2="53" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="471.5" y="57" fill="#1b1916">4.90 ms (p99 7.59)</text>
+<text x="292" y="91" text-anchor="end" fill="#1b1916">Actor create, first request answered (no sto (DO)</text>
+<rect x="300" y="78" width="294.5" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="594.5" y1="87" x2="653.1" y2="87" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="659.1" y="91" fill="#1b1916">222 ms (p99 1,028)</text>
+<text x="292" y="125" text-anchor="end" fill="#1b1916">Create, first request is a SQLite read (Rivet)</text>
+<rect x="300" y="112" width="152.7" height="18" fill="#b74b23" rx="3"/>
+<line x1="452.7" y1="121" x2="470.6" y2="121" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="476.6" y="125" fill="#1b1916">5.44 ms (p99 8.69)</text>
+<text x="292" y="159" text-anchor="end" fill="#1b1916">Create, first request is a SQLite read (DO)</text>
+<rect x="300" y="146" width="296.5" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="596.5" y1="155" x2="677.2" y2="155" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="683.2" y="159" fill="#1b1916">234 ms (p99 1,936)</text>
+<text x="292" y="193" text-anchor="end" fill="#1b1916">Create, first request is a durable SQLite wr (Rivet)</text>
+<rect x="300" y="180" width="162.4" height="18" fill="#b74b23" rx="3"/>
+<line x1="462.4" y1="189" x2="476.6" y2="189" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="482.6" y="193" fill="#1b1916">7.00 ms (p99 10.16)</text>
+<text x="292" y="227" text-anchor="end" fill="#1b1916">Create, first request is a durable SQLite wr (DO)</text>
+<rect x="300" y="214" width="293.8" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="593.8" y1="223" x2="661.4" y2="223" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="667.4" y="227" fill="#1b1916">218 ms (p99 1,278)</text>
+<text x="292" y="261" text-anchor="end" fill="#1b1916">Actor wake, first request answered (Rivet)</text>
+<rect x="300" y="248" width="168.5" height="18" fill="#b74b23" rx="3"/>
+<line x1="468.5" y1="257" x2="522.9" y2="257" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="528.9" y="261" fill="#1b1916">8.22 ms (p99 34.10)</text>
+<text x="292" y="295" text-anchor="end" fill="#1b1916">Actor wake, first request answered (DO)</text>
+<rect x="300" y="282" width="236.7" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="536.7" y1="291" x2="662.2" y2="291" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="668.2" y="295" fill="#1b1916">49.00 ms (p99 1,306)</text>
+<text x="292" y="329" text-anchor="end" fill="#1b1916">Wake, first request is a SQLite read (Rivet)</text>
+<rect x="300" y="316" width="173.1" height="18" fill="#b74b23" rx="3"/>
+<line x1="473.1" y1="325" x2="513.2" y2="325" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="519.2" y="329" fill="#1b1916">9.27 ms (p99 26.44)</text>
+<text x="292" y="363" text-anchor="end" fill="#1b1916">Wake, first request is a SQLite read (DO)</text>
+<rect x="300" y="350" width="236.7" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="536.7" y1="359" x2="662.2" y2="359" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="668.2" y="363" fill="#1b1916">49.00 ms (p99 1,306)</text>
+<text x="292" y="397" text-anchor="end" fill="#1b1916">Wake, first request is a durable SQLite writ (Rivet)</text>
+<rect x="300" y="384" width="177.6" height="18" fill="#b74b23" rx="3"/>
+<line x1="477.6" y1="393" x2="555.3" y2="393" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="561.3" y="397" fill="#1b1916">10.42 ms (p99 79.62)</text>
+<text x="292" y="431" text-anchor="end" fill="#1b1916">Wake, first request is a durable SQLite writ (DO)</text>
+<rect x="300" y="418" width="265.9" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="565.9" y1="427" x2="663.7" y2="427" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="669.7" y="431" fill="#1b1916">105 ms (p99 1,358)</text>
+<text x="292" y="465" text-anchor="end" fill="#1b1916">Warm request round trip (no storage) (Rivet)</text>
+<rect x="300" y="452" width="81.5" height="18" fill="#b74b23" rx="3"/>
+<line x1="381.5" y1="461" x2="401.7" y2="461" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="407.7" y="465" fill="#1b1916">0.84 ms (p99 1.43)</text>
+<text x="292" y="499" text-anchor="end" fill="#1b1916">Warm request round trip (no storage) (DO)</text>
+<rect x="300" y="486" width="179.6" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="479.6" y1="495" x2="502.5" y2="495" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="508.5" y="499" fill="#1b1916">11.00 ms (p99 20.00)</text>
+<rect x="12" y="486" width="10" height="10" fill="#b74b23"/><text x="26" y="495" fill="#1b1916">Rivet Actor</text>
+<rect x="110" y="486" width="10" height="10" fill="#4a6fa5"/><text x="124" y="495" fill="#1b1916">Durable Object</text>
+<text x="230" y="495" fill="#8a8478">bar: p50, dashed whisker: to p99, log scale</text>
+</svg>

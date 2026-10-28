@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "scenario": "create",
+    "prefix": "create-first",
+    "args": {
+      "n": "1200",
+      "gap-ms": "20",
+      "first": "first",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "create-first"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:44:45.620Z",
+    "endedAt": "2026-10-28T13:45:17.558Z"
+  },
+  "metrics": {
+    "create": {
+      "n": 1200,
+      "errors": 0,
+      "totalMs": {
+        "n": 1200,
+        "p50": 5.441,
+        "p90": 7.735,
+        "p99": 8.691,
+        "p999": 82.432,
+        "max": 217.581,
+        "mean": 6.498
+      },
+      "headersMs": {
+        "n": 1200,
+        "p50": 5.415,
+        "p90": 7.709,
+        "p99": 8.65,
+        "p999": 82.417,
+        "max": 217.551,
+        "mean": 6.468
+      },
+      "handlerMs": {
+        "n": 1200,
+        "p50": 1.592,
+        "p90": 2.181,
+        "p99": 2.339,
+        "p999": 2.525,
+        "max": 2.54,
+        "mean": 1.689
+      },
+      "sqlMs": {
+        "n": 1200,
+        "p50": 1.581,
+        "p90": 2.172,
+        "p99": 2.329,
+        "p999": 2.517,
+        "max": 2.53,
+        "mean": 1.679
+      },
+      "notCold": 0,
+      "createsPerSecond": 37.6
+    }
+  }
+}

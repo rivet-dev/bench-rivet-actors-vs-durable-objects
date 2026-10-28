@@ -1,0 +1,17 @@
+[Unit]
+Description=RivetKit benchmark node
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=rivet
+WorkingDirectory=/opt/rivet/app
+EnvironmentFile=/opt/rivet/node.env
+ExecStart=/opt/rivet/node/bin/node --max-old-space-size=16384 --import /opt/rivet/app/node_modules/tsx/dist/loader.mjs /opt/rivet/app/src/index.ts
+StandardOutput=append:/var/log/rivet/node.log
+StandardError=append:/var/log/rivet/node.log
+LimitNOFILE=1048576
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

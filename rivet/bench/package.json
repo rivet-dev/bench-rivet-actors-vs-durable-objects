@@ -1,0 +1,8 @@
+{
+	"name": "rivet-bench-driver",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"undici": "7.16.0"
+	}
+}

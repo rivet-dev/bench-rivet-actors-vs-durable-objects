@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "scenario": "sql-scan",
+    "prefix": "sql-scan",
+    "args": {
+      "n": "1000",
+      "rows": "1000",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "sql-scan"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:48:59.680Z",
+    "endedAt": "2026-10-28T13:49:00.944Z"
+  },
+  "metrics": {
+    "sql-scan": {
+      "n": 1000,
+      "errors": 0,
+      "totalMs": {
+        "n": 1000,
+        "p50": 1.133,
+        "p90": 1.261,
+        "p99": 2.231,
+        "p999": 5.767,
+        "max": 5.767,
+        "mean": 1.191
+      },
+      "sqlMs": {
+        "n": 1000,
+        "p50": 0.543,
+        "p90": 0.582,
+        "p99": 1.546,
+        "p999": 2.23,
+        "max": 2.23,
+        "mean": 0.579
+      }
+    }
+  },
+  "database": {
+    "count": {
+      "n": 1000,
+      "maxId": 1000
+    }
+  }
+}

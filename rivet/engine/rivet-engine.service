@@ -1,0 +1,18 @@
+[Unit]
+Description=Rivet Engine (benchmark)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=rivet
+Environment=RUST_LOG=info
+Environment=RUST_BACKTRACE=1
+ExecStart=/opt/rivet/bin/rivet-engine --config /opt/rivet/engine.json
+StandardOutput=append:/var/log/rivet/engine.log
+StandardError=append:/var/log/rivet/engine.log
+LimitNOFILE=1048576
+Restart=no
+TimeoutStopSec=180
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+# Addresses allowed to SSH into the benchmark VMs.
+ssh_source_cidrs = ["203.0.113.4/32"]
+# resource_group = "rivet-vs-do-bench"
+# prefix = "rvdo"

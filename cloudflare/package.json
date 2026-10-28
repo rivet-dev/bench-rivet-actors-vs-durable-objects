@@ -1,0 +1,13 @@
+{
+	"name": "rivet-vs-do-bench",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy"
+	},
+	"devDependencies": {
+		"wrangler": "4.42.0",
+		"@cloudflare/workers-types": "4.20250927.0",
+		"typescript": "5.9.2"
+	}
+}

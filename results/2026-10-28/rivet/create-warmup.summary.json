@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "scenario": "create",
+    "prefix": "warmup",
+    "args": {
+      "n": "300",
+      "gap-ms": "5",
+      "actor": "benchPing",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "warmup"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:43:56.011Z",
+    "endedAt": "2026-10-28T13:43:59.171Z"
+  },
+  "metrics": {
+    "create": {
+      "n": 300,
+      "errors": 0,
+      "totalMs": {
+        "n": 300,
+        "p50": 4.681,
+        "p90": 6.993,
+        "p99": 7.318,
+        "p999": 18.341,
+        "max": 18.341,
+        "mean": 5.406
+      },
+      "headersMs": {
+        "n": 300,
+        "p50": 4.649,
+        "p90": 6.958,
+        "p99": 7.286,
+        "p999": 17.731,
+        "max": 17.731,
+        "mean": 5.37
+      },
+      "handlerMs": {
+        "n": 300,
+        "p50": 0.005,
+        "p90": 0.007,
+        "p99": 0.018,
+        "p999": 0.021,
+        "max": 0.021,
+        "mean": 0.005
+      },
+      "notCold": 0,
+      "createsPerSecond": 95
+    }
+  }
+}

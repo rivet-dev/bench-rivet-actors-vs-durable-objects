@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "scenario": "sql-write",
+    "prefix": "sql-write-woken",
+    "args": {
+      "n": "1200",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "sql-write-woken"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:48:52.454Z",
+    "endedAt": "2026-10-28T13:48:58.635Z"
+  },
+  "metrics": {
+    "sql-write": {
+      "n": 1200,
+      "errors": 0,
+      "totalMs": {
+        "n": 1200,
+        "p50": 1.524,
+        "p90": 1.648,
+        "p99": 3.009,
+        "p999": 17.056,
+        "max": 25.899,
+        "mean": 1.627
+      },
+      "sqlMs": {
+        "n": 1200,
+        "p50": 0.683,
+        "p90": 0.75,
+        "p99": 1.067,
+        "p999": 3.979,
+        "max": 6.214,
+        "mean": 0.705
+      },
+      "handlerMs": {
+        "n": 1200,
+        "p50": 0.691,
+        "p90": 0.758,
+        "p99": 1.084,
+        "p999": 4.02,
+        "max": 6.225,
+        "mean": 0.714
+      },
+      "commitsPerSecond": 606.8,
+      "elapsedS": 1.98
+    }
+  }
+}

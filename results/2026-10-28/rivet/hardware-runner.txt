@@ -1,0 +1,5 @@
+CPU(s):                                  16
+Model name:                              AMD EPYC 9V45 96-Core Processor
+               total        used        free      shared  buff/cache   available
+Mem:              62           2          59           0           1          60
+6.12.113+deb13-cloud-amd64

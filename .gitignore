@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+*.log
+__pycache__/
+# Terraform state and inputs hold credentials and addresses of the benchmark infrastructure.
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+infra/azure/bench_key*
+# Local secrets and per-deployment state.
+.local/
+.env
+.env.*
+*.pem
+# Scratch output of runs started by hand inside the Cloudflare and Rivet bench directories;
+# collected results live under results/<date>/.
+cloudflare/results/
+rivet/bench/results/

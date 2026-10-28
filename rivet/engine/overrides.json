@@ -1,0 +1,71 @@
+{
+	"storage": {
+		"balancing": { "enabled": false },
+		"kv_commands": {
+			"max_open_volumes": 32768,
+			"max_inflight_commands": 8192
+		},
+		"log_shard": {
+			"max_memory_bytes": 8589934592,
+			"max_memory_requests": 16384,
+			"inbox_capacity": 16384,
+			"max_loaded_volumes": 131072,
+			"max_disk_bytes": 107374182400,
+			"checkpoint_bytes": 134217728,
+			"max_write_bytes": 67108864
+		},
+		"volume_client": {
+			"max_loaded_volumes": 65536,
+			"max_requests": 65536,
+			"open_timeout_ms": 30000
+		},
+		"log_request_capacity": 32768,
+		"volume_request_capacity": 8192,
+		"coordinator_request_capacity": 2048,
+		"command_timeout_ms": 30000,
+		"lookup_request_capacity": 4096,
+		"max_cold_reads": 512,
+		"max_read_sessions": 4096,
+		"store_max_keyed_in_flight": 1024,
+		"store_max_flush_uploads": 4,
+		"store_admission_scan_limit": 4096,
+		"store_volume_lock_stripes": 4096,
+		"maintainer_inbox_capacity": 16384,
+		"maintainer_max_requests": 8192,
+		"filesystem": {
+			"max_snapshots": 1024,
+			"max_pending_commits": 1024,
+			"max_memory_bytes": 134217728,
+			"max_process_cache_bytes": 4294967296
+		},
+		"cold_store": {
+			"block_cache_bytes": 6442450944,
+			"meta_cache_bytes": 536870912,
+			"disk_cache_bytes": 68719476736,
+			"disk_cache_on_compaction": false
+		}
+	},
+	"pegboard": {
+		"sqlite_sessions": 65536,
+		"command_concurrency": {
+			"actor_event": 512,
+			"actor": 512,
+			"index": 2048,
+			"actor_read": 1024
+		}
+	},
+	"pubsub": {
+		"request_header_capacity": 8192,
+		"max_message_bytes": 33554432,
+		"classes": {
+			"storage_log": { "outgoing_capacity": 196608 },
+			"storage_volume": { "outgoing_capacity": 49152 },
+			"storage_kv_command": { "outgoing_capacity": 49152 },
+			"storage_coordinator": { "outgoing_capacity": 12288 },
+			"storage_stop_readiness": { "outgoing_capacity": 8192 },
+			"node_command": { "outgoing_capacity": 16384, "incoming_capacity": 16384 },
+			"gateway_http": { "outgoing_capacity": 8192, "incoming_capacity": 8192 },
+			"gateway_websocket": { "outgoing_capacity": 65536, "incoming_capacity": 65536 }
+		}
+	}
+}

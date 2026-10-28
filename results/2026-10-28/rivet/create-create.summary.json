@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "scenario": "create",
+    "prefix": "create",
+    "args": {
+      "n": "1500",
+      "gap-ms": "20",
+      "first": "ping",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "create"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:44:06.031Z",
+    "endedAt": "2026-10-28T13:44:44.605Z"
+  },
+  "metrics": {
+    "create": {
+      "n": 1500,
+      "errors": 0,
+      "totalMs": {
+        "n": 1500,
+        "p50": 4.903,
+        "p90": 7.178,
+        "p99": 7.592,
+        "p999": 14.547,
+        "max": 18.881,
+        "mean": 5.604
+      },
+      "headersMs": {
+        "n": 1500,
+        "p50": 4.882,
+        "p90": 7.162,
+        "p99": 7.567,
+        "p999": 13.931,
+        "max": 18.785,
+        "mean": 5.583
+      },
+      "handlerMs": {
+        "n": 1500,
+        "p50": 0.003,
+        "p90": 0.005,
+        "p99": 0.008,
+        "p999": 0.034,
+        "max": 0.048,
+        "mean": 0.004
+      },
+      "notCold": 0,
+      "createsPerSecond": 38.9
+    }
+  }
+}

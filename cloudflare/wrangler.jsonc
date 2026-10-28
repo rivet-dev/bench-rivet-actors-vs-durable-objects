@@ -1,0 +1,8 @@
+{
+	"name": "rivet-vs-do-bench",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-09-01",
+	"durable_objects": { "bindings": [{ "name": "BENCH_DO", "class_name": "BenchDO" }] },
+	"migrations": [{ "tag": "v1", "new_sqlite_classes": ["BenchDO"] }],
+	"observability": { "enabled": false }
+}

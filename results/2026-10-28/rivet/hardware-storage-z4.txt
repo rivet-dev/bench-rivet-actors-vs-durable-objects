@@ -1,0 +1,9 @@
+zone 4
+CPU(s):                                  8
+Model name:                              AMD EPYC 9V45 96-Core Processor
+               total        used        free      shared  buff/cache   available
+Mem:              62           1          60           0           1          60
+6.12.113+deb13-cloud-amd64
+/dev/nvme1n1 ext4 rw,noatime
+nvme0n1   64G MSFT NVMe Accelerator v1.0
+nvme1n1  1.7T Microsoft NVMe Direct Disk v2

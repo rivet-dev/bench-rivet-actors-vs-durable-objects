@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "scenario": "sql-read",
+    "prefix": "sql-read",
+    "args": {
+      "n": "1200",
+      "rows": "1000",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "sql-read"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:48:50.033Z",
+    "endedAt": "2026-10-28T13:48:51.453Z"
+  },
+  "metrics": {
+    "sql-read": {
+      "n": 1200,
+      "errors": 0,
+      "totalMs": {
+        "n": 1200,
+        "p50": 0.947,
+        "p90": 1.147,
+        "p99": 1.326,
+        "p999": 1.85,
+        "max": 10.319,
+        "mean": 0.98
+      },
+      "sqlMs": {
+        "n": 1200,
+        "p50": 0.082,
+        "p90": 0.246,
+        "p99": 0.411,
+        "p999": 0.87,
+        "max": 3.691,
+        "mean": 0.144
+      },
+      "handlerMs": {
+        "n": 1200,
+        "p50": 0.087,
+        "p90": 0.251,
+        "p99": 0.418,
+        "p999": 0.876,
+        "max": 3.709,
+        "mean": 0.149
+      },
+      "missingRows": 0
+    }
+  },
+  "database": {
+    "count": {
+      "n": 1000,
+      "maxId": 1000
+    },
+    "pageCount": {
+      "page_count": 54
+    },
+    "pageSize": {
+      "page_size": 4096
+    }
+  }
+}

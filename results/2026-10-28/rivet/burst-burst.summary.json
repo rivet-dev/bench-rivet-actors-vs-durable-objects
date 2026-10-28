@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "scenario": "burst",
+    "prefix": "burst",
+    "args": {
+      "concurrency": "1,8,32,128",
+      "per": "500",
+      "out": "/opt/rivet/results/run3",
+      "prefix": "burst"
+    },
+    "endpointHost": "storage-z1:6420",
+    "namespace": "default",
+    "pool": "default",
+    "node": "v24.10.0",
+    "startedAt": "2026-10-28T13:49:14.926Z",
+    "endedAt": "2026-10-28T13:49:27.219Z"
+  },
+  "metrics": {
+    "burst-c1": {
+      "n": 500,
+      "errors": 0,
+      "totalMs": {
+        "n": 500,
+        "p50": 4.934,
+        "p90": 7.192,
+        "p99": 7.747,
+        "p999": 63.757,
+        "max": 63.757,
+        "mean": 5.751
+      },
+      "createsPerSecond": 172.8,
+      "elapsedS": 2.89
+    },
+    "burst-c8": {
+      "n": 500,
+      "errors": 0,
+      "totalMs": {
+        "n": 500,
+        "p50": 7.487,
+        "p90": 9.995,
+        "p99": 27.148,
+        "p999": 151.075,
+        "max": 151.075,
+        "mean": 8.405
+      },
+      "createsPerSecond": 783.8,
+      "elapsedS": 0.64
+    },
+    "burst-c32": {
+      "n": 500,
+      "errors": 0,
+      "totalMs": {
+        "n": 500,
+        "p50": 22.843,
+        "p90": 29.177,
+        "p99": 34.131,
+        "p999": 35.244,
+        "max": 35.244,
+        "mean": 21.817
+      },
+      "createsPerSecond": 1435.1,
+      "elapsedS": 0.35
+    },
+    "burst-c128": {
+      "n": 500,
+      "errors": 0,
+      "totalMs": {
+        "n": 500,
+        "p50": 90.414,
+        "p90": 152.194,
+        "p99": 164.645,
+        "p999": 171.457,
+        "max": 171.457,
+        "mean": 97.552
+      },
+      "createsPerSecond": 1251.9,
+      "elapsedS": 0.4
+    }
+  }
+}

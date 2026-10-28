@@ -1,0 +1,15 @@
+{
+	"name": "rivet-bench-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"start": "tsx src/index.ts"
+	},
+	"dependencies": {
+		"rivetkit": "3.0.0-preview.2"
+	},
+	"devDependencies": {
+		"tsx": "4.20.6",
+		"typescript": "5.9.2"
+	}
+}

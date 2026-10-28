@@ -1,0 +1,54 @@
+{
+ "wake-w2-write-1793089684236.json::wake/write::noop": {
+  "worker": {
+   "n": 100,
+   "p50": 0.36,
+   "p90": 0.52,
+   "p99": 0.73,
+   "cpuP50": 0.22
+  },
+  "workerOther": "",
+  "do": null,
+  "doOther": ""
+ },
+ "wake-w2-write-1793089684236.json::wake/write::cold": {
+  "worker": {
+   "n": 198,
+   "p50": 106.01,
+   "p90": 303.32,
+   "p99": 1425.94,
+   "cpuP50": 0.51
+  },
+  "workerOther": "",
+  "do": {
+   "n": 196,
+   "p50": 93.84,
+   "p90": 192.15,
+   "p99": 1158.78,
+   "cpuP50": 0.41
+  },
+  "doOther": "",
+  "doColos": {
+   "EWR": 79,
+   "IAD": 117
+  }
+ },
+ "wake-w2-write-1793089684236.json::wake/write::warm": {
+  "worker": {
+   "n": 197,
+   "p50": 31.34,
+   "p90": 72.54,
+   "p99": 664.59,
+   "cpuP50": 0.51
+  },
+  "workerOther": "",
+  "do": {
+   "n": 185,
+   "p50": 26.85,
+   "p90": 56.62,
+   "p99": 780.87,
+   "cpuP50": 0.21
+  },
+  "doOther": ""
+ }
+}

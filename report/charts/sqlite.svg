@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="264" viewBox="0 0 760 264" font-family="system-ui, sans-serif" font-size="12">
+<rect width="760" height="264" fill="#ffffff"/>
+<text x="12" y="22" font-size="14" font-weight="600" fill="#1b1916">SQLite round trips (ms, log scale)</text>
+<line x1="300.0" y1="36" x2="300.0" y2="244" stroke="#e6e3dc"/>
+<text x="300.0" y="258" text-anchor="middle" fill="#8a8478">0.1 ms</text>
+<line x1="446.7" y1="36" x2="446.7" y2="244" stroke="#e6e3dc"/>
+<text x="446.7" y="258" text-anchor="middle" fill="#8a8478">1 ms</text>
+<line x1="593.3" y1="36" x2="593.3" y2="244" stroke="#e6e3dc"/>
+<text x="593.3" y="258" text-anchor="middle" fill="#8a8478">10 ms</text>
+<line x1="740.0" y1="36" x2="740.0" y2="244" stroke="#e6e3dc"/>
+<text x="740.0" y="258" text-anchor="middle" fill="#8a8478">100 ms</text>
+<text x="292" y="57" text-anchor="end" fill="#1b1916">SQLite point read, warm, round trip (Rivet)</text>
+<rect x="300" y="44" width="143.2" height="18" fill="#b74b23" rx="3"/>
+<line x1="443.2" y1="53" x2="464.6" y2="53" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="470.6" y="57" fill="#1b1916">0.95 ms (p99 1.33)</text>
+<text x="292" y="91" text-anchor="end" fill="#1b1916">SQLite point read, warm, round trip (DO)</text>
+<rect x="300" y="78" width="299.4" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="599.4" y1="87" x2="614.8" y2="87" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="620.8" y="91" fill="#1b1916">11.00 ms (p99 14.00)</text>
+<text x="292" y="125" text-anchor="end" fill="#1b1916">SQLite durable write (1 row), round trip (Rivet)</text>
+<rect x="300" y="112" width="173.5" height="18" fill="#b74b23" rx="3"/>
+<line x1="473.5" y1="121" x2="516.8" y2="121" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="522.8" y="125" fill="#1b1916">1.52 ms (p99 3.01)</text>
+<text x="292" y="159" text-anchor="end" fill="#1b1916">SQLite durable write (1 row), round trip (DO)</text>
+<rect x="300" y="146" width="363.3" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="663.3" y1="155" x2="734.7" y2="155" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="740.7" y="159" fill="#1b1916">30.00 ms (p99 92.00)</text>
+<text x="292" y="193" text-anchor="end" fill="#1b1916">SQLite scan of 1,000 rows, round trip (Rivet)</text>
+<rect x="300" y="180" width="154.6" height="18" fill="#b74b23" rx="3"/>
+<line x1="454.6" y1="189" x2="497.8" y2="189" stroke="#b74b23" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="503.8" y="193" fill="#1b1916">1.13 ms (p99 2.23)</text>
+<text x="292" y="227" text-anchor="end" fill="#1b1916">SQLite scan of 1,000 rows, round trip (DO)</text>
+<rect x="300" y="214" width="304.9" height="18" fill="#4a6fa5" rx="3"/>
+<line x1="604.9" y1="223" x2="627.1" y2="223" stroke="#4a6fa5" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="633.1" y="227" fill="#1b1916">12.00 ms (p99 17.00)</text>
+<rect x="12" y="214" width="10" height="10" fill="#b74b23"/><text x="26" y="223" fill="#1b1916">Rivet Actor</text>
+<rect x="110" y="214" width="10" height="10" fill="#4a6fa5"/><text x="124" y="223" fill="#1b1916">Durable Object</text>
+<text x="230" y="223" fill="#8a8478">bar: p50, dashed whisker: to p99, log scale</text>
+</svg>
